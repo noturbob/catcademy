@@ -193,12 +193,9 @@ desktop.ini
 !frontend/README.md
 !frontend/PROMPT.md
 !backend/PROMPT.md
-!backend/INDEX.md
-!backend/COMPLETION_SUMMARY.md
-!backend/IMPLEMENTATION_SUMMARY.md
-!backend/PROJECT_STATUS.txt
-!backend/QUICK_REFERENCE.md
-!backend/FINAL_REPORT.txt
+
+# Keep documentation templates whitelisted
+!backend/api/README.md
 
 # Configuration templates
 !.env.example
