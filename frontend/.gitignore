@@ -39,3 +39,12 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Local documentation (not tracked in repo)
+AGENTS.md
+CLAUDE.md
+BUILD_SUMMARY.md
+FINAL_SUMMARY.md
+IMPLEMENTATION_COMPLETE.md
+README_COMPLETE.md
+🎉_COMPLETE.txt
