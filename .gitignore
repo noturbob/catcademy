@@ -1,0 +1,208 @@
+# ============================================================================
+# CATCADEMY PROJECT - ROOT GITIGNORE
+# ============================================================================
+
+# ============================================================================
+# ENVIRONMENT & CONFIGURATION
+# ============================================================================
+.env
+.env.local
+.env.*.local
+.env.prod
+.env.staging
+.env.test
+*.key
+*.pem
+
+# ============================================================================
+# IDE & EDITOR
+# ============================================================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+.project
+.classpath
+.settings/
+*.sublime-project
+*.sublime-workspace
+.vim/
+*.iml
+
+# ============================================================================
+# FRONTEND (Next.js / Node.js)
+# ============================================================================
+frontend/node_modules/
+frontend/.pnp
+frontend/.pnp.js
+frontend/.next/
+frontend/out/
+frontend/build/
+frontend/dist/
+frontend/.env*.local
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/coverage/
+frontend/.turbo/
+frontend/.swc/
+frontend/pnpm-lock.yaml
+
+# ============================================================================
+# BACKEND (Go)
+# ============================================================================
+backend/api/bin/
+backend/api/dist/
+backend/api/.env
+backend/api/.env.local
+backend/api/*.log
+backend/api/tmp/
+backend/api/vendor/
+
+# Go specific
+*.o
+*.a
+*.so
+.DS_Store
+/tmp/
+
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+# Dependency directories
+vendor/
+
+# Go workspace file
+go.work
+go.work.sum
+
+# ============================================================================
+# DATABASE
+# ============================================================================
+*.db
+*.sqlite
+*.sqlite3
+*.sql
+!db/migrations/*.sql
+pgdata/
+postgres_data/
+redis_data/
+
+# ============================================================================
+# DOCKER
+# ============================================================================
+.dockerignore
+docker-compose.override.yml
+
+# ============================================================================
+# BUILD & COMPILATION
+# ============================================================================
+dist/
+build/
+.out/
+*.tar.gz
+*.zip
+
+# ============================================================================
+# LOGS & TEMP FILES
+# ============================================================================
+*.log
+logs/
+tmp/
+temp/
+*.pid
+*.seed
+*.pid.lock
+
+# ============================================================================
+# DOCUMENTATION (Generated files)
+# ============================================================================
+docs/generated/
+docs/_build/
+
+# ============================================================================
+# SYSTEM FILES
+# ============================================================================
+Thumbs.db
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+
+# ============================================================================
+# DEVELOPMENT
+# ============================================================================
+.debug/
+debug/
+.vscode-test/
+coverage/
+.nyc_output/
+
+# ============================================================================
+# OS SPECIFIC
+# ============================================================================
+# macOS
+.AppleDouble
+.LSOverride
+*.swp
+*~.nib
+
+# Windows
+desktop.ini
+[Dd]esktop.ini
+
+# Linux
+.directory
+
+# ============================================================================
+# MISC
+# ============================================================================
+.cache/
+*.bak
+*.tmp
+*.swp
+*.swo
+*~
+*.orig
+.idea/
+.vscode/
+*.sublime-*
+
+# ============================================================================
+# KEEP THESE FILES IN REPO
+# ============================================================================
+# Documentation files
+!README.md
+!backend/README.md
+!frontend/README.md
+!frontend/PROMPT.md
+!backend/PROMPT.md
+!backend/INDEX.md
+!backend/COMPLETION_SUMMARY.md
+!backend/IMPLEMENTATION_SUMMARY.md
+!backend/PROJECT_STATUS.txt
+!backend/QUICK_REFERENCE.md
+!backend/FINAL_REPORT.txt
+
+# Configuration templates
+!.env.example
+!backend/api/.env.example
+
+# Build files
+!backend/api/bin/catalyst-api
