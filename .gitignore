@@ -197,6 +197,10 @@ desktop.ini
 # Keep documentation templates whitelisted
 !backend/api/README.md
 
+# Local documentation (not tracked)
+GIT_SETUP.md
+BEFORE_GIT_PUSH.txt
+
 # Configuration templates
 !.env.example
 !backend/api/.env.example
