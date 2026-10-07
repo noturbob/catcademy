@@ -4,7 +4,7 @@ dev:
 air -c .air.toml
 
 build:
-go build -o bin/catalyst-api ./main.go
+go build -o bin/catcademy-api ./main.go
 
 migrate-up:
 go run main.go

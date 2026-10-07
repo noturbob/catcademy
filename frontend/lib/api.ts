@@ -10,7 +10,7 @@ const api = axios.create({
 // Attach JWT token to every request
 api.interceptors.request.use((config) => {
   if (typeof window !== 'undefined') {
-    const token = localStorage.getItem('catalyst_token')
+    const token = localStorage.getItem('catcademy_token')
     if (token) config.headers.Authorization = `Bearer ${token}`
   }
   return config
@@ -21,7 +21,7 @@ api.interceptors.response.use(
   (res) => res,
   (err) => {
     if (err.response?.status === 401 && typeof window !== 'undefined') {
-      localStorage.removeItem('catalyst_token')
+      localStorage.removeItem('catcademy_token')
       window.location.href = '/login'
     }
     return Promise.reject(err)

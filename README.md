@@ -29,7 +29,7 @@ catcademy/
 │   │   ├── docker-compose.yml  # Database setup
 │   │   ├── .air.toml     # Hot reload config
 │   │   ├── README.md     # Backend docs
-│   │   └── bin/catalyst-api    # Compiled binary ✅
+│   │   └── bin/catcademy-api    # Compiled binary ✅
 │   ├── PROMPT.md         # Backend specifications
 │   ├── INDEX.md          # Navigation guide
 │   ├── IMPLEMENTATION_SUMMARY.md # Technical docs

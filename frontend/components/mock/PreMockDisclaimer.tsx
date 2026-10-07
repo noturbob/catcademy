@@ -40,7 +40,7 @@ export function PreMockDisclaimer({
             </p>
 
             <p>
-              As CATalyst is a growing platform, the larger the cohort, the more accurate your
+              As Catcademy is a growing platform, the larger the cohort, the more accurate your
               percentile becomes. We always show you the cohort size so you know exactly what
               you're comparing against.
             </p>

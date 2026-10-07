@@ -31,7 +31,7 @@ export default function LeaderboardPage() {
           <Trophy className="h-8 w-8 text-amber-600" />
           Weekly Leaderboard
         </h1>
-        <p className="text-gray-600">See how you rank among the CATalyst community</p>
+        <p className="text-gray-600">See how you rank among the Catcademy community</p>
       </div>
 
       <div className="flex items-center gap-2">

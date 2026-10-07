@@ -1,9 +1,9 @@
-# CATalyst — Claude Agent Prompt (Next.js Frontend)
+# Catcademy — Claude Agent Prompt (Next.js Frontend)
 # Paste this entire prompt to Claude in VS Code (Claude Code)
 
 ---
 
-You are scaffolding the complete Next.js 14 frontend for **CATalyst** — a CAT exam preparation platform for Indian students. Think LeetCode but for CAT. This is running on **Arch Linux**. Read every instruction carefully before writing a single file.
+You are scaffolding the complete Next.js 14 frontend for **Catcademy** — a CAT exam preparation platform for Indian students. Think LeetCode but for CAT. This is running on **Arch Linux**. Read every instruction carefully before writing a single file.
 
 ---
 
@@ -26,7 +26,7 @@ You are scaffolding the complete Next.js 14 frontend for **CATalyst** — a CAT 
 
 ## WHAT YOU ARE BUILDING
 
-CATalyst has these core sections:
+Catcademy has these core sections:
 
 1. **Auth** — login, signup (connects to Supabase Auth via Go backend JWT)
 2. **Dashboard** — home with stats, streak, upcoming mock, weak areas
@@ -187,7 +187,7 @@ Create `.env.example` with the same keys but empty values.
 ## DESIGN SYSTEM — FOLLOW THIS EXACTLY
 
 ### Colors
-Use this CSS variable palette in `globals.css`. CATalyst brand color is a deep indigo.
+Use this CSS variable palette in `globals.css`. Catcademy brand color is a deep indigo.
 
 ```css
 :root {
@@ -198,7 +198,7 @@ Use this CSS variable palette in `globals.css`. CATalyst brand color is a deep i
 
 Semantic colors for CAT sections — add these as Tailwind custom colors in `tailwind.config.ts`:
 ```ts
-catalyst: {
+catcademy: {
   quant: '#6366f1',    // indigo — Quantitative
   varc: '#0ea5e9',     // sky — Verbal
   dilr: '#f59e0b',     // amber — DI & LR
@@ -326,7 +326,7 @@ This is a dialog/modal that appears BEFORE every mock starts. It must show:
 📊 About this week's percentile
 
 Percentile is calculated based on [N] students who've taken 
-this mock so far. As CATalyst is a growing platform, the 
+this mock so far. As Catcademy is a growing platform, the 
 larger the cohort, the more accurate your percentile becomes.
 We always show you the cohort size so you know exactly what 
 you're comparing against.
@@ -393,11 +393,11 @@ Top section — the big number:
 - Subtitle: "Percentile among 2,341 students"
 - Show cohort growth: "+312 students since you submitted"
 - Shareable card with "Share Result" button that copies a formatted text:
-  "I scored 94.2 percentile in CATalyst Weekly Mock #12 among 2,341 students! Try it: [link]"
+  "I scored 94.2 percentile in Catcademy Weekly Mock #12 among 2,341 students! Try it: [link]"
 
 Score breakdown cards (3 sections):
 | Section | Score | Accuracy | Avg Time |
-- Use the catalyst.quant / catalyst.varc / catalyst.dilr colors per section
+- Use the catcademy.quant / catcademy.varc / catcademy.dilr colors per section
 
 Answer review section:
 - Toggle: "Show All" / "Show Wrong Only" / "Show Marked"
@@ -535,7 +535,7 @@ const api = axios.create({
 
 // Attach JWT token to every request
 api.interceptors.request.use((config) => {
-  const token = localStorage.getItem('catalyst_token')
+  const token = localStorage.getItem('catcademy_token')
   if (token) config.headers.Authorization = `Bearer ${token}`
   return config
 })
@@ -668,7 +668,7 @@ export const DILR_TOPICS = [
 
 ## LEARN MODULE MASTERY SYSTEM
 
-Every learn module uses the same 3-state mastery system. Store in localStorage keyed by `catalyst_learn_{module}_{subtopic}`:
+Every learn module uses the same 3-state mastery system. Store in localStorage keyed by `catcademy_learn_{module}_{subtopic}`:
 
 ```ts
 type MasteryState = 'not_started' | 'learning' | 'practicing' | 'mastered'
@@ -769,7 +769,7 @@ Build in this exact order:
 
 ## FINAL NOTES
 
-- The platform name is **CATalyst**
+- The platform name is **Catcademy**
 - Brand voice: serious but not stuffy — like a smart senior who's been through CAT and wants to help
 - Every empty state should have a motivating message, not just "No data found"
 - The mock timer turning red when < 5 minutes left is non-negotiable UX

@@ -35,7 +35,7 @@ export default function SignupPage() {
     <Card className="w-full">
       <CardHeader>
         <CardTitle className="text-2xl">Start Your CAT Prep</CardTitle>
-        <CardDescription>Create your CATalyst account in minutes</CardDescription>
+        <CardDescription>Create your Catcademy account in minutes</CardDescription>
       </CardHeader>
       <CardContent>
         <form onSubmit={handleSubmit} className="space-y-4">

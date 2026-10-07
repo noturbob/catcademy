@@ -62,7 +62,7 @@ export default function LandingPage() {
           whileHover={{ scale: 1.05 }}
           transition={{ type: 'spring', stiffness: 300 }}
         >
-          CATalyst
+          Catcademy
         </motion.div>
         <div className="flex gap-4">
           <Link href="/login">
@@ -200,7 +200,7 @@ export default function LandingPage() {
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
               <span className="bg-gradient-to-r from-indigo-300 to-cyan-300 bg-clip-text text-transparent">
-                Why Choose CATalyst?
+                Why Choose Catcademy?
               </span>
             </h2>
             <p className="text-slate-400 text-lg">Everything you need to crush the CAT exam</p>
@@ -302,7 +302,7 @@ export default function LandingPage() {
             viewport={{ once: true }}
           >
             {[
-              { name: 'Arjun S.', score: '99.2 percentile', comment: 'CATalyst mocks were incredibly accurate. Helped me stay calm during the actual exam.' },
+              { name: 'Arjun S.', score: '99.2 percentile', comment: 'Catcademy mocks were incredibly accurate. Helped me stay calm during the actual exam.' },
               { name: 'Priya M.', score: '97.8 percentile', comment: 'The weak area detection and AI practice is game-changing. Saved me so much study time.' },
               { name: 'Rohit K.', score: '99.5 percentile', comment: 'Best platform for CAT prep. The speed modules made me unbeatable in calculation sections.' },
             ].map((testimonial, idx) => (
@@ -367,7 +367,7 @@ export default function LandingPage() {
       >
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row items-center justify-between gap-8">
-            <p className="text-slate-400">© 2025 CATalyst. Built with passion for CAT aspirants.</p>
+            <p className="text-slate-400">© 2025 Catcademy. Built with passion for CAT aspirants.</p>
             <div className="flex gap-6">
               <motion.a
                 href="#"

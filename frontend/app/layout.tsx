@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'CATalyst — CAT Exam Preparation Platform',
+  title: 'Catcademy — CAT Exam Preparation Platform',
   description:
     'Weekly mocks with real percentile. AI-generated practice. Speed prerequisites. Everything in one place.',
 }

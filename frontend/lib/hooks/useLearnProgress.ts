@@ -9,8 +9,8 @@ export function useLearnProgress(module: string, subtopic?: string) {
   const [progress, setProgress] = useState(0)
 
   const storageKey = subtopic
-    ? `catalyst_learn_${module}_${subtopic}`
-    : `catalyst_learn_${module}`
+    ? `catcademy_learn_${module}_${subtopic}`
+    : `catcademy_learn_${module}`
 
   // Load from localStorage on mount
   useEffect(() => {

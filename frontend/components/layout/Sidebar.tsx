@@ -36,7 +36,7 @@ export function Sidebar() {
       {/* Logo */}
       <div className="flex h-16 items-center px-6">
         <Link href="/" className="text-xl font-bold text-indigo-600">
-          CATalyst
+          Catcademy
         </Link>
       </div>
 

@@ -206,4 +206,4 @@ BEFORE_GIT_PUSH.txt
 !backend/api/.env.example
 
 # Build files
-!backend/api/bin/catalyst-api
+!backend/api/bin/catcademy-api

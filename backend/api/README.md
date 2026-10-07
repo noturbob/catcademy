@@ -1,6 +1,6 @@
-# CATalyst Backend - Go API Server
+# Catcademy Backend - Go API Server
 
-Complete Go backend for the CATalyst CAT exam preparation platform.
+Complete Go backend for the Catcademy CAT exam preparation platform.
 
 ## Quick Start
 
@@ -29,7 +29,7 @@ Complete Go backend for the CATalyst CAT exam preparation platform.
    ```bash
    make dev    # Hot reload development
    # or
-   make build && ./bin/catalyst-api  # Production
+   make build && ./bin/catcademy-api  # Production
    ```
 
 Server starts on `http://localhost:8080`
@@ -149,7 +149,7 @@ ENV=development
 CORS_ORIGINS=http://localhost:3000
 
 # Database
-DATABASE_URL=postgresql://user:pass@localhost/catalyst
+DATABASE_URL=postgresql://user:pass@localhost/catcademy
 REDIS_URL=redis://localhost:6379
 
 # Auth
@@ -183,7 +183,7 @@ make dev  # Uses air for hot reload
 ### Build
 
 ```bash
-make build  # Creates bin/catalyst-api
+make build  # Creates bin/catcademy-api
 ```
 
 ### Migrations
@@ -253,7 +253,7 @@ percentile = (users_with_lower_score / total_users) * 100
 
 ```bash
 make build
-./bin/catalyst-api
+./bin/catcademy-api
 ```
 
 ###Docker
@@ -262,15 +262,15 @@ make build
 FROM golang:1.22-alpine AS builder
 WORKDIR /app
 COPY . .
-RUN go build -o catalyst-api ./main.go
+RUN go build -o catcademy-api ./main.go
 
 FROM alpine:latest
 RUN apk --no-cache add ca-certificates
 WORKDIR /root/
-COPY --from=builder /app/catalyst-api .
+COPY --from=builder /app/catcademy-api .
 COPY --from=builder /app/db ./db
 EXPOSE 8080
-CMD ["./catalyst-api"]
+CMD ["./catcademy-api"]
 ```
 
 ## Troubleshooting

@@ -1,9 +1,9 @@
-# CATalyst — Claude Agent Prompt (Go Backend)
+# Catcademy — Claude Agent Prompt (Go Backend)
 # Paste this entire prompt to Claude in VS Code (Claude Code)
 
 ---
 
-You are scaffolding the complete Go backend for **CATalyst** — a CAT exam preparation platform for Indian students. The frontend is already built in Next.js 14. Your job is to build the entire API server that it talks to. Read every instruction fully before writing a single file.
+You are scaffolding the complete Go backend for **Catcademy** — a CAT exam preparation platform for Indian students. The frontend is already built in Next.js 14. Your job is to build the entire API server that it talks to. Read every instruction fully before writing a single file.
 
 ---
 
@@ -46,7 +46,7 @@ The Go API handles:
 
 ```bash
 mkdir -p apps/api && cd apps/api
-go mod init github.com/yourusername/catalyst-api
+go mod init github.com/agony/catcademy-api
 
 go get github.com/gin-gonic/gin
 go get github.com/gin-contrib/cors
@@ -160,7 +160,7 @@ ENV=development
 CORS_ORIGINS=http://localhost:3000
 
 # Database
-DATABASE_URL=postgresql://postgres:password@localhost:5432/catalyst?sslmode=disable
+DATABASE_URL=postgresql://postgres:password@localhost:5432/catcademy?sslmode=disable
 REDIS_URL=redis://localhost:6379
 
 # Auth
@@ -754,7 +754,7 @@ package services
 import (
 	"math"
 	"sort"
-	"github.com/yourusername/catalyst-api/internal/models"
+	"github.com/agony/catcademy-api/internal/models"
 )
 
 // CalculateScore applies CAT scoring rules:
@@ -1301,7 +1301,7 @@ dev:
 	air -c .air.toml
 
 build:
-	go build -o bin/catalyst-api ./main.go
+	go build -o bin/catcademy-api ./main.go
 
 migrate-up:
 	go run main.go --migrate-only
@@ -1346,7 +1346,7 @@ services:
   postgres:
     image: postgres:16-alpine
     environment:
-      POSTGRES_DB: catalyst
+      POSTGRES_DB: catcademy
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: password
     ports:

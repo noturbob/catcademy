@@ -1,4 +1,4 @@
-module github.com/agony/catalyst-api
+module github.com/agony/catcademy-api
 
 go 1.25.0
 

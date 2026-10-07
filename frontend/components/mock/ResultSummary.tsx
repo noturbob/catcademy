@@ -45,7 +45,7 @@ export function ResultSummary({
     DILR: 'text-amber-700',
   }
 
-  const shareText = `I scored ${percentile.toFixed(1)} percentile in ${mockTitle} among ${cohortSize.toLocaleString()} students on CATalyst! Try it: https://catalyst.app`
+  const shareText = `I scored ${percentile.toFixed(1)} percentile in ${mockTitle} among ${cohortSize.toLocaleString()} students on Catcademy! Try it: https://catcademy.app`
 
   const handleCopyShare = () => {
     navigator.clipboard.writeText(shareText)

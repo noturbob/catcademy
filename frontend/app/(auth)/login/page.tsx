@@ -33,7 +33,7 @@ export default function LoginPage() {
     <Card className="w-full">
       <CardHeader>
         <CardTitle className="text-2xl">Welcome Back</CardTitle>
-        <CardDescription>Login to your CATalyst account</CardDescription>
+        <CardDescription>Login to your Catcademy account</CardDescription>
       </CardHeader>
       <CardContent>
         <form onSubmit={handleSubmit} className="space-y-4">
